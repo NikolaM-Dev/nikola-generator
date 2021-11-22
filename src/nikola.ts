@@ -52,8 +52,15 @@ const templatesFolderPath = path.resolve(`${__dirname}/../`, 'templates');
   }
 
   console.log('eslintrc successfully created 😄');
-  const depencies = getDependencies(technology);
+  let dependencies;
+
+  if (language === 'typescript') {
+    if (technology === 'react' || technology === 'node')
+      dependencies = getDependencies(`${technology}_ts`);
+  }
+
+  dependencies = getDependencies(technology);
 
   console.log(`Installing necessary dependencies for ${technology} 🔥`);
-  intallDependecies(depencies, packageManager);
+  intallDependecies(dependencies, packageManager);
 })();
