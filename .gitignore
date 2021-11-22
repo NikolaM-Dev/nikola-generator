@@ -116,8 +116,3 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-
-# src
-src/*.js
-src/types/*.js
-src/utils/*.js
