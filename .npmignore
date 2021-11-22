@@ -1,0 +1,17 @@
+.DS_Store
+.eslintrc.js
+.gitignore
+.idea/
+node_modules/
+
+# source
+**/*.ts
+*.ts
+
+# definitions
+!**/*.d.ts
+!*.d.ts
+
+# configuration
+/.vscode
+tsconfig.json
