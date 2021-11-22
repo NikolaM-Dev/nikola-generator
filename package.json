@@ -5,7 +5,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "dist/index.js",
+  "main": "dist/nikola.js",
   "bin": {
     "nikola": "./dist/nikola.js"
   },
