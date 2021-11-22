@@ -1,17 +1,19 @@
 {
   "name": "nikola-generator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Quickly create and opinionated .eslintrc.js with built-in prettier rules ",
   "publishConfig": {
     "access": "public"
   },
-  "main": "src/nikola.js",
+  "main": "dist/nikola.js",
   "bin": {
-    "nikola": "./src/nikola.js"
+    "nikola": "./dist/nikola.js"
   },
   "scripts": {
-    "build": "tsc -p .",
-    "start": "node src/nikola.js",
+    "prebuild": "rimraf dist",
+    "copy-files": "cp -r ./src/templates dist/templates",
+    "build": "tsc -p . && yarn copy-files",
+    "start": "node dist/nikola.js",
     "start:dev": "nodemon src/nikola.ts",
     "prepare": "yarn build",
     "watch": "tsc -w"
@@ -55,6 +57,7 @@
     "typescript": "^4.5.2"
   },
   "dependencies": {
-    "inquirer": "^8.2.0"
+    "inquirer": "^8.2.0",
+    "rimraf": "^3.0.2"
   }
 }
