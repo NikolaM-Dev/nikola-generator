@@ -1,6 +1,6 @@
 {
   "name": "nikola-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Quickly create and opinionated .eslintrc.js with built-in prettier rules ",
   "publishConfig": {
     "access": "public"
