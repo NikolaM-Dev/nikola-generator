@@ -4,8 +4,6 @@
     "module": "CommonJS",
     "lib": ["dom", "es6", "es2017", "esnext.asynciterable"],
     "sourceMap": false,
-    "outDir": "dist",
-    "rootDir": "src",
     "strict": true,
     "types": ["node"],
     "esModuleInterop": true,
@@ -18,5 +16,6 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "removeComments": true
-  }
+  },
+  "exclude": ["node_modules", "src/templates"]
 }
