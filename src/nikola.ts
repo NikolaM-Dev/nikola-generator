@@ -11,7 +11,7 @@ import {
   nWriteFile,
 } from './utils';
 
-const templatesFolderPath = path.resolve(`${__dirname}/../`, 'templates');
+const templatesFolderPath = path.resolve(`${__dirname}/`, 'templates');
 
 (async () => {
   const packageManager = await getOptions();
