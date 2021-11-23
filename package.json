@@ -10,13 +10,8 @@
     "nikola": "./dist/nikola.js"
   },
   "scripts": {
-    "prebuild": "rimraf dist",
-    "copy-files": "cp -r ./src/templates dist/templates",
-    "build": "tsc -p . && yarn copy-files",
-    "start": "node dist/nikola.js",
-    "start:dev": "nodemon src/nikola.ts",
-    "prepare": "yarn build",
-    "watch": "tsc -w"
+    "start": "node src/nikola.js",
+    "start:dev": "nodemon src/nikola.js"
   },
   "repository": {
     "type": "git",
@@ -43,21 +38,14 @@
   "homepage": "https://github.com/NikolaM-Dev/nikola-generator#readme",
   "devDependencies": {
     "@babel/core": "^7.16.0",
-    "@types/inquirer": "^8.1.3",
-    "@types/node": "^16.11.9",
-    "@typescript-eslint/eslint-plugin": "^5.4.0",
-    "@typescript-eslint/parser": "^5.4.0",
     "eslint": "^8.3.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-prettier": "^4.0.0",
     "nodemon": "^2.0.15",
-    "prettier": "^2.4.1",
-    "ts-node": "^10.4.0",
-    "typescript": "^4.5.2"
+    "prettier": "^2.4.1"
   },
   "dependencies": {
-    "inquirer": "^8.2.0",
-    "rimraf": "^3.0.2"
+    "inquirer": "^8.2.0"
   }
 }
