@@ -4,14 +4,6 @@
 .idea/
 node_modules/
 
-# source
-**/*.ts
-*.ts
-
-# definitions
-!**/*.d.ts
-!*.d.ts
-
 # configuration
 /.vscode
 tsconfig.json
