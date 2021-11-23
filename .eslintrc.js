@@ -1,19 +1,15 @@
 module.exports = {
   env: {
+    commonjs: true,
     es2021: true,
     node: true,
     jest: true,
   },
-  extends: [
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
-  ],
-  parser: '@typescript-eslint/parser',
+  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
   parserOptions: {
     ecmaVersion: 12,
-    sourceType: 'module',
   },
-  plugins: ['@typescript-eslint', 'prettier', 'import'],
+  plugins: ['prettier', 'import'],
   rules: {
     'prettier/prettier': [
       'error',
@@ -28,7 +24,7 @@ module.exports = {
         endOfLine: 'lf',
       },
     ],
-    '@typescript-eslint/no-unused-vars': [
+    'no-unused-vars': [
       'error',
       {
         args: 'after-used',
