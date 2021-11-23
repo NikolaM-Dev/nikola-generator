@@ -1,6 +1,12 @@
-import inquirer from 'inquirer';
+// @ts-check
 
-export const getOptions = async (): Promise<boolean> => {
+const inquirer = require('inquirer');
+
+/**
+ * Return a boolean, true if use yarn, false if use node
+ * @returns {Promise<boolean>}
+ */
+const getOptions = async () => {
   const { packageManager } = await inquirer
     .prompt([
       {
@@ -14,3 +20,5 @@ export const getOptions = async (): Promise<boolean> => {
 
   return packageManager;
 };
+
+module.exports = { getOptions };

@@ -1,15 +1,16 @@
 #!/usr/bin/env node
-import { readdir } from 'fs/promises';
-import path from 'path';
 
-import inquirer from 'inquirer';
+const { readdir } = require('fs/promises');
+const path = require('path');
 
-import {
+const inquirer = require('inquirer');
+
+const {
   getDependencies,
   getOptions,
   intallDependecies,
   nWriteFile,
-} from './utils';
+} = require('./utils');
 
 const templatesFolderPath = path.resolve(`${__dirname}/`, 'templates');
 

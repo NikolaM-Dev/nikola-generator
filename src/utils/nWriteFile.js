@@ -1,6 +1,14 @@
-import { readFile, writeFile } from 'fs/promises';
+// @ts-check
 
-export const nWriteFile = async (file: string, path: string): Promise<void> => {
+const { readFile, writeFile } = require('fs/promises');
+
+/**
+ *
+ * @param {string} file
+ * @param {string} path
+ * @returns {Promise<void>}
+ */
+const nWriteFile = async (file, path) => {
   if (!file) {
     console.log('No files to copy');
     process.exit();
@@ -16,3 +24,5 @@ export const nWriteFile = async (file: string, path: string): Promise<void> => {
     process.exit();
   });
 };
+
+module.exports = { nWriteFile };

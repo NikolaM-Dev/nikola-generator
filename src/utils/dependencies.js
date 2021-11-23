@@ -1,6 +1,6 @@
-import { dependecy, technology } from '../types';
+// @ts-check
 
-export const nodeDependencies: dependecy[] = [
+const nodeDependencies = [
   'eslint',
   'prettier',
   'eslint-config-prettier',
@@ -8,7 +8,7 @@ export const nodeDependencies: dependecy[] = [
   'eslint-plugin-prettier',
 ];
 
-export const nodeTSDependencies: dependecy[] = [
+const nodeTSDependencies = [
   'eslint',
   'prettier',
   '@typescript-eslint/parser',
@@ -18,7 +18,7 @@ export const nodeTSDependencies: dependecy[] = [
   'eslint-plugin-prettier',
 ];
 
-export const reactDependencies: dependecy[] = [
+const reactDependencies = [
   'eslint',
   'prettier',
   'eslint-plugin-react',
@@ -28,7 +28,7 @@ export const reactDependencies: dependecy[] = [
   'eslint-plugin-react-hooks',
 ];
 
-export const reactTSDependencies: dependecy[] = [
+const reactTSDependencies = [
   'eslint',
   'prettier',
   '@typescript-eslint/parser',
@@ -40,7 +40,7 @@ export const reactTSDependencies: dependecy[] = [
   'eslint-plugin-react-hooks',
 ];
 
-const technologies: technology = {
+const technologies = {
   node: nodeDependencies,
   node_ts: nodeTSDependencies,
   react: reactDependencies,
@@ -49,6 +49,13 @@ const technologies: technology = {
   nest: nodeTSDependencies,
 };
 
-export const getDependencies = (technology: string): dependecy[] => {
+/**
+ * Return an array with dependencies
+ * @param {string} technology
+ * @returns {string[]}
+ */
+const getDependencies = (technology) => {
   return technologies[technology];
 };
+
+module.exports = { getDependencies };
