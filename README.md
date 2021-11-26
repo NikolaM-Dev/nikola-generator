@@ -33,23 +33,23 @@ This configuration allows you to automatically correct most of the problems that
 },
 
 "[javascript]": {
-	"editor.formatOnPaste": false,
-	"editor.formatOnSave": false
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false
 },
 
 "[javascriptreact]": {
-	"editor.formatOnPaste": false,
-	"editor.formatOnSave": false
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false
 },
 
 "[typescript]": {
-	"editor.formatOnPaste": false,
-	"editor.formatOnSave": false
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false
 },
 
 "[typescriptreact]": {
-	"editor.formatOnPaste": false,
-	"editor.formatOnSave": false
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false
 },
 ```
 
