@@ -1,7 +1,7 @@
-export interface dependecy {
+export interface Dependecy {
   [index: number]: string;
 }
 
-export interface technology {
-  [index: string]: dependecy[];
+export interface Technology {
+  [index: string]: Dependecy[];
 }
