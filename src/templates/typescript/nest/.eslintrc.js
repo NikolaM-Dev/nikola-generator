@@ -14,7 +14,7 @@ module.exports = {
     tsconfigRootDir: __dirname,
     sourceType: "module",
   },
-  ignorePatterns: ['.eslint.js'],
+  ignorePatterns: ['.eslintrc.js'],
   plugins: ['@typescript-eslint', 'prettier', 'import'],
   rules: {
     'no-console': 'warn',
