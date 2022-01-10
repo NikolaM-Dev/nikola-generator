@@ -1,10 +1,10 @@
 import { exec } from 'child_process';
 
-import { dependecy } from '../types';
+import { Dependecy } from '../types';
 import { runCommand } from '../types/types';
 
 export const intallDependecies = (
-  dependecies: dependecy[],
+  dependecies: Dependecy[],
   packageManager: boolean,
 ): void => {
   if (dependecies.length == 0) return;
