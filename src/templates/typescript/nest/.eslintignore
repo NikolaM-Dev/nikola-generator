@@ -1,6 +1,0 @@
-# Dirs
-dist/
-node_modules/
-
-# Files
-.eslintrc.js
